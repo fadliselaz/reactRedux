@@ -10,15 +10,28 @@ const initialState = {
 
 //reducer yang akan memproduksi state untuk aplikasimu..
 function rootReducer(state=initialState, action){
-    if(action.type === ADD_ARTICLE){
-        return Object.assign({}, state, {
-            articles: state.articles.concat(action.payload)
-        })
-    }else if(action.type === ADD_USER){
-        return Object.assign({}, state, {
-            user: state.user.concat(action.payload)
-        })
+    // if(action.type === ADD_ARTICLE){
+    //     return Object.assign({}, state, {
+    //         articles: state.articles.concat(action.payload)
+    //     })
+    // }else if(action.type === ADD_USER){
+    //     return Object.assign({}, state, {
+    //         user: state.user.concat(action.payload)
+    //     })
+    // }
+    // 
+
+    switch(action.type){
+        case ADD_ARTICLE:
+            return Object.assign({}, state, {
+                articles: state.articles.concat(action.payload)
+            })
+        case ADD_USER:
+            return Object.assign({}, state, {
+                user: state.user.concat(action.payload)
+            })
     }
+
     return state
 }
 
