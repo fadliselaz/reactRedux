@@ -9,12 +9,13 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="App-header">
-                <h2>Article Here</h2>
-
+                <h2>Show Console</h2>
+                <List />
                 </div>
             </div>
         );
     }
 }
+
 
 export default App;

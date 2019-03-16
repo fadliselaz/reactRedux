@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from "react-redux"
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {articles: state.articles}
 }
 
@@ -14,6 +14,5 @@ const connectedList = ({articles}) => (
         ))}
     </ul>
 )
-
 const List = connect(mapStateToProps)(connectedList)
 export default List

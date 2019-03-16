@@ -5,7 +5,7 @@ import { ADD_ARTICLE, ADD_USER } from "../constants/action-types"
 //imuntable STATE here
 const initialState = {
     articles : [],
-    user : []
+    user : [],
 }
 
 //reducer yang akan memproduksi state untuk aplikasimu..
