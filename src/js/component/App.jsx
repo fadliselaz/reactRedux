@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import List from "./list"
+import Form from './Form';
 
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
                 <div className="App-header">
                 <h2>Show Console</h2>
                 <List />
+                <Form />
                 </div>
             </div>
         );
